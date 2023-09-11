@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homePageFragment">
+
+    <fragment
+        android:id="@+id/homePageFragment"
+        android:name="com.kotlinegitim.notebook.ui.fragments.HomePageFragment"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page" >
+        <action
+            android:id="@+id/note_add_transition"
+            app:destination="@id/noteAddFragment" />
+        <action
+            android:id="@+id/note_update_transition"
+            app:destination="@id/noteUpdateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/noteAddFragment"
+        android:name="com.kotlinegitim.notebook.ui.fragments.NoteAddFragment"
+        android:label="fragment_note_add"
+        tools:layout="@layout/fragment_note_add" >
+        <action
+            android:id="@+id/action_noteAddFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <argument
+            android:name="note"
+            app:argType="com.kotlinegitim.notebook.Notes" />
+    </fragment>
+    <fragment
+        android:id="@+id/noteUpdateFragment"
+        android:name="com.kotlinegitim.notebook.ui.fragments.NoteUpdateFragment"
+        android:label="fragment_note_update"
+        tools:layout="@layout/fragment_note_update" >
+        <action
+            android:id="@+id/action_noteUpdateFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <argument
+            android:name="note"
+            app:argType="com.kotlinegitim.notebook.Notes" />
+    </fragment>
+</navigation>

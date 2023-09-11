@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "862277231653",
+    "project_id": "notebook-69705",
+    "storage_bucket": "notebook-69705.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:862277231653:android:6b724dd454ea1bee6c0bcc",
+        "android_client_info": {
+          "package_name": "com.kotlinegitim.notebook"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDj-xlbsH3Hz0aQvUwVAc0Yrg9iC9zAVhw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
